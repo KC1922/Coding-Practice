@@ -27,36 +27,43 @@ The repository includes code exercises written in:
 
 I hope you find the code insightful and enjoy exploring my projects.
 
-# Overview of File Directories
+# Overview of File Directories and their Contents
 
 ## Java
 
-### array_reverse.java
+### Array Reversing
 
 - **File Name:** array_reverse.java
 - **Description:** Simple program that lets the user populate an array of 10 elements and then reverses the array. Elements can be anything, not just integers.
 - **Concepts Demonstrated:** Arrays, for loops, user input, methods.
 
-### max_min.java
+### Finding Max and Min
 
 - **File Name:** max_min.java
 - **Description:** Simple program that takes in a list of numbers and determines the maximum and minimum values. Users can also choose to find the 2nd, 3rd, etc. largest/smallest values with error checking to ensure the user doesn't enter a value larger than the list size.
 - **Concepts Demonstrated:** Sorting, algorithms, user input, methods, functions.
 
-### palindrome.java
+### Determine Palindrome
 
 - **File Name:** palindrome.java
 - **Description:** Simple program that takes in a string and determines if it is a palindrome or not.
 - **Concepts Demonstrated:** String manipulation, algorithms.
 
-### string_reverse.java
+### Reverse a String
 
 - **File Name:** string_reverse.java
-- **Description:** Simple program that takes in a string and reverses it. Specifically, reverses word order, not character order.
+- **Description:** Simple program that takes in a string and reverses it. 
 - **Concepts Demonstrated:** String manipulation.
 
-### swapping_values.java
+### Reverse a String's Word Order
+
+- **File Name:** word_reverse.java
+- **Description:** Simple program that takes in a string and reverses the order of the words. Specifically, reverses word order, not character order.
+- **Concepts Demonstrated:** String manipulation.
+
+### Swap Values
 
 - **File Name:** swapping_values.java
 - **Description:** Simple program that takes in two values and swaps them without using a temporary variable or reassignment.
 - **Concepts Demonstrated:** Bitwise operators, arithmetic manipulation.
+
