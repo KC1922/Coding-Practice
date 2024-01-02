@@ -35,8 +35,13 @@ I hope you find the code insightful and enjoy exploring my projects.
 
 - **File Name:** array_reverse.java
 - **Description:** Simple program that lets the user populate an array of 10 elements and then reverses the array. Elements can be anything, not just integers.
-- **Concepts Demonstrated:** Arrays, for loops, user input, methods.
+- **Concepts Demonstrated:** Functional interfaces, while loops, swithces, Maps.
 
+### Caclulator 
+
+- **File Name:** calculator.java
+- **Description:** simple calculator that takes in a calculation and returns the result. Supports basic arithmetic, trigonometric functions, logarithms, and exponentiation.
+- **Concepts Demonstrated:** Arrays, for loops, user input, methods.
 ### Finding Max and Min
 
 - **File Name:** max_min.java
