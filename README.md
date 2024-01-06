@@ -29,6 +29,11 @@ I hope you find the code insightful and enjoy exploring my projects.
 
 # Overview of File Directories and their Contents
 
+## Leet Code
+
+- Simple collection of Leet Code solutions, programmed currently in both Java and C#.
+- Each file has a link to its corresponding Leet Code page.
+
 ## Java
 
 ### Array Reversing
