@@ -25,7 +25,7 @@ The repository includes code exercises written in:
 2. Browse through individual exercises and their solutions.
 3. Gain insights into my coding techniques and strategies.
 
-I hope you find the code insightful and enjoy exploring my projects.
+I hope you find the code insightful and enjoy exploring my solutions.
 
 # Overview of File Directories and their Contents
 
