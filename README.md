@@ -31,7 +31,7 @@ I hope you find the code insightful and enjoy exploring my solutions.
 
 ## Leet Code
 
-- Simple collection of Leet Code solutions, programmed currently in both Java and C#.
+- Simple collection of Leet Code solutions, programmed Java, C#, Python, and PostgreSQL.
 - Each file has a link to its corresponding Leet Code page.
 
 ## Java
