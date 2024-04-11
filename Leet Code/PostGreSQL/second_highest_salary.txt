@@ -1,0 +1,9 @@
+## Solution to LeetCode problem 176: Second Highest Salary
+## From: https://leetcode.com/problems/second-highest-salary/description/
+
+## This query selects the second highest salary and checks to make sure a second lowest exists.
+
+SELECT MAX(salary) AS SecondHighestSalary 
+FROM Employee 
+WHERE salary < (SELECT MAX(salary)FROM Employee);
+

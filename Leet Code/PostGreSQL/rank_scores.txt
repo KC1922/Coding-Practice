@@ -1,0 +1,15 @@
+## Solution to LeetCode problem 178
+## https://leetcode.com/problems/rank-scores/description/
+
+## My code makes use of a window function. Window functions provide the ability to perform calculations 
+## across sets of rows that are related to the current query row as per the documentation.
+## In this problem, I select score from the Scores table and order them by score descending. I also select
+## using the dense_rank() function which returns the relative rank of the current row, that is (rank - 1) / (total partition rows - 1)
+## and order them by score.
+
+SELECT score, dense_rank()
+    OVER(
+        ORDER BY score DESC
+    ) AS rank
+FROM Scores 
+ORDER BY score DESC

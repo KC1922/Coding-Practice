@@ -1,0 +1,23 @@
+## Solution to LeetCode problem 177: Nth Highest Salary
+
+SELECT DISTINCT(E.salary) FROM Employee E
+        ORDER BY E.salary DESC
+        LIMIT 1 OFFSET (N - 1)
+
+OR
+
+CREATE OR REPLACE FUNCTION NthHighestSalary(N INT) RETURNS TABLE (Salary INT) AS $$
+BEGIN
+  RETURN QUERY (
+    SELECT DISTINCT E1.salary AS NthHighestSalary
+    FROM Employee E1
+    WHERE N = (
+        SELECT COUNT(DISTINCT E2.salary) 
+        FROM Employee E2 
+        WHERE E2.salary >= E1.salary
+    )
+  );
+END;
+$$ LANGUAGE plpgsql;
+
+first solution is faster, but would not cover an edge case
