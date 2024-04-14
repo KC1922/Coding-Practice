@@ -9,6 +9,8 @@ OR
 CREATE OR REPLACE FUNCTION NthHighestSalary(N INT) RETURNS TABLE (Salary INT) AS $$
 BEGIN
   RETURN QUERY (
+
+    ## start of my code
     SELECT DISTINCT E1.salary AS NthHighestSalary
     FROM Employee E1
     WHERE N = (

@@ -1,0 +1,12 @@
+## Solution to problem 181 of LeetCode
+## https://leetcode.com/problems/employees-earning-more-than-their-managers/description/
+
+## We must find which employees earn more than their managers, which is done with the following.
+
+SELECT E2.name AS Employee 
+FROM Employee E1
+INNER JOIN Employee E2 ON E1.id = E2.managerID
+WHERE E1.salary < E2.salary
+
+## We use an inner join to create table E1 which is populated with only the managers and E2 which is only the employees
+## Then we simply compare the salaries in the two tables.

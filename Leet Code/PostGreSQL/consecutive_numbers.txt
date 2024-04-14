@@ -1,0 +1,17 @@
+## Solution to Leet Code problem 180
+## https://leetcode.com/problems/consecutive-numbers/description/
+## This solution makes use of the LEAD() function to peer into the next row and a CTE (common table entry).
+## The CTE  "RankedNums" selects the "num" column from the "Logs" table and uses the LEAD() function to peek into the next two rows 
+## (LEAD(num, 1) and LEAD(num, 2)). This creates two additional columns, "num1" and "num2", which represent the next two numbers in the 
+## sequence for each row.
+
+
+WITH RankedNums AS (
+    SELECT num,
+    LEAD(num, 1) OVER() num1,
+    LEAD(num, 2) OVER() num2
+    FROM Logs
+)
+SELECT DISTINCT num AS ConsecutiveNums 
+FROM RankedNums
+WHERE (num=num1) AND (num1=num2);

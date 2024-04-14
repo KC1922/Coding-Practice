@@ -1,0 +1,35 @@
+## Joins
+
+    (INNER) JOIN: Returns records that have matching values in both tables
+    LEFT (OUTER) JOIN: Returns all records from the left table, and the matched records from the right table
+    RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table
+    FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table
+    
+    https://learnsql.com/blog/sql-join-examples-with-explanations/
+
+## Grouping
+
+    The GROUP BY statement groups rows that have the same values into summary rows.
+    It is often used with aggregate functions (COUNT(), MAX(), MIN(), SUM(), AVG()) to group the result-set by one or more columns.
+
+## Relationships (Database Schemas)
+
+    One-to-One Relationship:
+        In a one-to-one relationship, each record in one table is related to exactly one record in another table, and vice versa.
+        Types:
+            Non-identifying: The foreign key in the child table can be NULL, meaning the relationship is optional.
+            Identifying: The foreign key in the child table cannot be NULL, meaning the relationship is mandatory.
+
+    One-to-Many Relationship:
+        In a one-to-many relationship, each record in one table can be related to multiple records in another table, 
+        but each record in the second table is related to only one record in the first table.
+        Types:
+            Non-identifying: The foreign key in the child table can be NULL, allowing for optional relationships.
+            Identifying: The foreign key in the child table cannot be NULL, indicating a mandatory relationship.
+            Recursive: The relationship exists within a single table, where records are related to other records within the same table.
+
+    Many-to-Many Relationship:
+        In a many-to-many relationship, each record in one table can be related to multiple records in another table, and vice versa.
+        This type of relationship requires a junction table, also known as an associative or linking table, 
+        to facilitate the connection between the two tables.
+

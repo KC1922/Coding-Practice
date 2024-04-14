@@ -1,0 +1,11 @@
+## Solution to problem 182 from Leet Code
+## https://leetcode.com/problems/duplicate-emails/
+
+## We must find all emails that have duplicates (i.e. appear more than once)
+
+SELECT p1.email AS Email
+FROM Person p1
+GROUP BY p1.email
+HAVING COUNT(*) > 1
+
+## Solution uses COUNT to determine if an email appears more than once
