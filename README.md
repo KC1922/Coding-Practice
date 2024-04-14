@@ -1,4 +1,4 @@
-# Simple Code Demonstrations
+# Coding Practice
 
 This repository serves as a showcase of small code exercises that I've worked on to demonstrate my programming skills and practice in various languages, including Java and C#. The code showcased is simple and serves as a way for me to practice the language and exhibit an understanding of key concepts. Larger projects will be located in their own repositories.
 
@@ -8,7 +8,6 @@ The purpose of this repository is to:
 
 - Display my coding style and problem-solving approach.
 - Demonstrate proficiency in languages such as Java and C#.
-- Provide a portfolio of my coding projects.
 
 Feel free to explore the code and solutions. If you have any feedback or suggestions, I'd love to hear them!
 
@@ -17,7 +16,9 @@ Feel free to explore the code and solutions. If you have any feedback or suggest
 The repository includes code exercises written in:
 
 - Java
-- C# (Not yet added)
+- C#
+- Python
+- PostgreSQL
 
 ## How to Explore
 
